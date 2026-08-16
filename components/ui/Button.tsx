@@ -15,13 +15,13 @@ const Button =({
     ...props
 }: ButtonProps) => {
     const baseClass = 'btn';
-    const varaintClass = `btn--${variant}`;
+    const variantClass = `btn--${variant}`;
     const sizeClass = `btn--${size}`;
     const fullWidthClass = fullWidth ? 'btn--full' : '';
 
     const combinedClass = [
         baseClass,
-        varaintClass,
+        variantClass,
         sizeClass,
         fullWidthClass,
         className
