@@ -105,7 +105,7 @@ const Upload = ({onComplete}: UploadProps) => {
                     onDrop={handleDrop}>
 
                     <input type="file" className="drop-input" accept=".jpg,.jpeg,.png,.webp"
-                           disabled={isSignedIn} onChange={handleChange}/>
+                           disabled={!isSignedIn} onChange={handleChange}/>
 
                     <div className="drop-content">
                         <div className="drop-icon">
@@ -116,12 +116,12 @@ const Upload = ({onComplete}: UploadProps) => {
                                 "Click to upload or just drag and drop"
                                 ): ("Sign in or sign up with Puter to upload")}
                         </p>
-                        <p className="help">Maximum file size 50 MB</p>
+                        <p className="help">Maximum file size 10 MB</p>
                     </div>
                 </div>
             ) : (
                 <div className="upload-status">
-                    <div className="upload-status">
+                    <div className="status-content">
                         <div className="status-icon">
                             {progress === 100 ? (
                                     <CheckCircle2 className="check" />

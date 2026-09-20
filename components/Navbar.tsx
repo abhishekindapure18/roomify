@@ -27,7 +27,7 @@ const Navbar = () => {
             <nav className="inner">
                 <div className="left">
                     <div className="brand">
-                        <Box className="logp"/>
+                        <Box className="logo"/>
 
                         <span className="name">
                             Roomify
