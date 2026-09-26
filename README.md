@@ -24,26 +24,26 @@ Roomify is an AI-powered design tool that turns a 2D floor plan image into a pho
 
 ```
 app/
-  root.tsx              # App shell, layout, global providers
-  routes.ts              # Route definitions
+  root.tsx              
+  routes.ts              
   routes/
-    home.tsx             # Landing page: hero, upload, project grid
-    visualizer.$id.tsx   # Single-project 3D visualizer view
-  app.css                 # Global styles (Tailwind)
+    home.tsx             
+    visualizer.$id.tsx   
+  app.css                
 
 components/
   Navbar.tsx
-  Upload.tsx              # Drag-and-drop uploader with progress state
+  Upload.tsx             
   ui/
-    Button.tsx            # Shared button component
+    Button.tsx            
 
 lib/
-  ai.action.ts            # Calls the AI model to generate the 3D render
-  puter.action.ts         # Auth + project create/list actions
-  puter.hosting.ts        # Uploads images to hosted storage, manages hosting config
-  puter.worker.js         # Puter Worker: backend API routes (save/list/get project)
-  constants.ts            # Prompts and config constants
-  utils.ts                # Shared helper functions
+  ai.action.ts           
+  puter.action.ts         
+  puter.hosting.ts        
+  puter.worker.js         
+  constants.ts         
+  utils.ts             
 ```
 
 **How it works:**
